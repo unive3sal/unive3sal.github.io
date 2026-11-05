@@ -1,8 +1,25 @@
-# Yuhao Deng · Personal website
+# 邓宇昊 / Yuhao Deng · Personal website
 
-Live: **https://unive3sal.github.io/**
+Production: **https://unive3sal.github.io/**
 
-A responsive, bilingual personal website built with plain HTML, CSS, and JavaScript. No build step or JavaScript dependencies are required.
+A bilingual, responsive website built with plain HTML, CSS, and JavaScript. No build step or JavaScript dependencies.
+
+## Terminal design
+
+The design combines Hugo Terminal's retro visual language with Astro Cactus's compact, content-first layout. The HTML and CSS are custom implementations. It uses self-hosted JetBrains Mono, warm dark colors, amber and mint palettes, native expandable project descriptions, and a Neovim-inspired status line.
+
+Keyboard navigation supplements visible links and controls:
+
+| Key | Action |
+| --- | --- |
+| `j` / `k` | Scroll down / up |
+| `gg` / `G` | Page top / bottom |
+| `:` or `/` | Search commands and sections |
+| `Ctrl+K` / `Cmd+K` | Open command palette |
+| `?` | Show keybindings |
+| `Esc` | Close a dialog |
+
+Page shortcuts are inactive in text fields. Language and palette preferences are stored locally when browser storage is available. Reduced-motion preferences are respected.
 
 ## Preview
 
@@ -14,16 +31,21 @@ Open http://127.0.0.1:4173/.
 
 ## Edit
 
-- `index.html`: Chinese content, layout, navigation, and metadata.
-- `script.js`: English translations and language preference persistence.
-- `styles.css`: visual design, responsive layouts, reduced-motion support, and print styling.
-- `resume.md`: downloadable English résumé, with the phone number omitted for the public website.
-- `assets/`: public GitHub avatar, favicon, and social-sharing image.
+- `index.html`: Chinese content, semantic markup, navigation, and metadata.
+- `script.js`: English translations, preferences, command palette, and keyboard navigation.
+- `styles.css`: responsive terminal design, dialogs, status line, and print styling.
+- `resume.pdf`: downloadable PDF résumé supplied by the owner, served unchanged as `Yuhao-Deng-Resume.pdf`.
+- `assets/`: favicon, social image, and self-hosted fonts.
+- `assets/fonts/OFL.txt`: JetBrains Mono font license.
 
-Content follows the provided `Yuhao-Deng-Resume.md`. The avatar and GitHub links refer to `unive3sal`. Employer project summaries are derived from the résumé; no private source repositories are included.
+Employer project summaries come from the supplied résumé. No private source repositories are included. The Neovim preference was provided by the owner.
+
+## References
+
+- [Hugo Terminal](https://github.com/panr/hugo-theme-terminal)
+- [Astro Cactus](https://github.com/chrismwilliams/astro-theme-cactus)
+- [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
 
 ## Publish
 
-GitHub Pages publishes the root of the `main` branch. Commit and push changes to update the site. Check the deployment under the repository's Actions tab and Settings → Pages.
-
-The page uses Google Fonts with system-font fallbacks. Core content remains readable without JavaScript; JavaScript enables the English translation and remembers the selected language.
+GitHub Pages publishes the root of `main`. Commit and push changes to `main` to deploy. Check deployment under Actions and Settings → Pages.
