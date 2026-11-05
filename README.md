@@ -19,7 +19,7 @@ Keyboard navigation supplements visible links and controls:
 | `?` | Show keybindings |
 | `Esc` | Close a dialog |
 
-Page shortcuts are inactive in text fields. Language and palette preferences are stored locally when browser storage is available. Reduced-motion preferences are respected.
+Page shortcuts are inactive in text fields. English is the default language. Language and palette preferences are stored locally when browser storage is available. Reduced-motion preferences are respected.
 
 ## Preview
 
@@ -31,8 +31,8 @@ Open http://127.0.0.1:4173/.
 
 ## Edit
 
-- `index.html`: Chinese content, semantic markup, navigation, and metadata.
-- `script.js`: English translations, preferences, command palette, and keyboard navigation.
+- `index.html`: English content, semantic markup, navigation, and metadata.
+- `script.js`: English and Chinese translations, preferences, command palette, and keyboard navigation.
 - `styles.css`: responsive terminal design, dialogs, status line, and print styling.
 - `resume.pdf`: downloadable PDF résumé supplied by the owner, served as `Yuhao-Deng-Resume.pdf`.
 - `assets/`: favicon, social image, and self-hosted fonts.
