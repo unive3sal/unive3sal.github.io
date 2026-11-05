@@ -15,7 +15,7 @@
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preload" href="assets/fonts/jetbrains-mono-regular.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <script src="script.js?v=20261105-projects" defer></script>
   <title>Yuhao Deng · ~/home</title>
 </head>
 <body>
@@ -81,16 +81,28 @@
           </div>
         </details>
         <details class="project" id="project-3">
-          <summary><span class="project-number" aria-hidden="true">03</span><div class="project-main"><h3 class="project-name"><span data-i18n="signalName">signal-processing<span class="directory-slash">/</span></span></h3><span class="project-subtitle" data-i18n="signalSubtitle">C++ systems · Concurrency & numerical performance</span><span class="project-meta" data-i18n="signalMeta">Jun 2024–Mar 2025 · Ericsson</span></div><span class="project-kind" data-i18n="performanceKind">performance</span><span class="disclosure-marker" aria-hidden="true">+</span></summary>
+          <summary><span class="project-number" aria-hidden="true">03</span><div class="project-main"><h3 class="project-name" data-i18n="signalName">Signal processing: implementation & optimization</h3><span class="project-subtitle" data-i18n="signalSubtitle">Numerical algorithms · Parallel computing · Asynchronous C++</span><span class="project-meta" data-i18n="signalMeta">Jun 2024–Mar 2025 · Ericsson</span></div><span class="project-kind" data-i18n="performanceKind">performance</span><span class="disclosure-marker" aria-hidden="true">+</span></summary>
           <div class="project-body">
-            <p data-i18n="signalDescription">Refactored a Linux-based signal-processing library, moving key components toward asynchronous communication with Protocol Buffers and epoll. Parallelized matrix factorization, rewrote Cholesky decomposition, and used disassembly analysis to investigate floating-point and runtime issues.</p>
+            <p data-i18n="signalDescription">At Ericsson, I implemented and optimized numerical algorithms in a Linux-based C++ signal-processing library. The work combined algorithm implementation with changes to concurrent execution: improving matrix-computation efficiency, redesigning inter-thread communication, and investigating numerical behavior at the machine-code level.</p>
+            <ul class="project-contributions">
+              <li data-i18n="signalNumericalContribution"><strong>Algorithm implementation & parallelization.</strong> Parallelized matrix factorization and rewrote the Cholesky decomposition implementation to improve the efficiency of key matrix workloads.</li>
+              <li data-i18n="signalAsyncContribution"><strong>Asynchronous communication.</strong> Redesigned inter-thread communication using Protocol Buffers and Linux epoll, moving key components from synchronous calls toward an asynchronous architecture.</li>
+              <li data-i18n="signalDebugContribution"><strong>Numerical debugging.</strong> Used objdump and disassembly analysis to investigate floating-point precision and runtime issues, connecting behavior in the C++ implementation to the generated machine code.</li>
+            </ul>
+            <div class="project-result"><span class="result-arrow" aria-hidden="true">↳</span><span data-i18n="signalResult">Improved matrix-operation efficiency by approximately <strong>6×</strong> in key workloads.</span></div>
             <p class="tech-line">C++17 <span>·</span> Linux epoll <span>·</span> Protocol Buffers <span>·</span> <span data-i18n="numericalComputing">Numerical computing</span></p>
           </div>
         </details>
         <details class="project" id="project-4">
-          <summary><span class="project-number" aria-hidden="true">04</span><div class="project-main"><h3 class="project-name"><span data-i18n="forecastName">time-series<span class="directory-slash">/</span></span></h3><span class="project-subtitle" data-i18n="forecastSubtitle">Time-series forecasting · Model selection through deployment</span><span class="project-meta" data-i18n="forecastMeta">Apr–Sep 2025 · Ericsson</span></div><span class="project-kind" data-i18n="researchKind">research</span><span class="disclosure-marker" aria-hidden="true">+</span></summary>
+          <summary><span class="project-number" aria-hidden="true">04</span><div class="project-main"><h3 class="project-name" data-i18n="forecastName">Time-series forecasting: training & deployment</h3><span class="project-subtitle" data-i18n="forecastSubtitle">Model evaluation · Informer · Hyperparameter tuning</span><span class="project-meta" data-i18n="forecastMeta">Apr–Sep 2025 · Ericsson</span></div><span class="project-kind" data-i18n="mlEngineeringKind">ML engineering</span><span class="disclosure-marker" aria-hidden="true">+</span></summary>
           <div class="project-body">
-            <p data-i18n="forecastDescription">Led model comparison, training, tuning, and deployment for an internal forecasting project. Compared LSTM, LightGBM, and Informer, selecting Informer to capture long-range dependencies through sparse attention.</p>
+            <p data-i18n="forecastDescription">I led an internal time-series forecasting project at Ericsson, taking the workflow from model selection and evaluation through training, hyperparameter tuning, and deployment. The work covered both choosing a model for long-range temporal dependencies and carrying it through to a deployed implementation.</p>
+            <ul class="project-contributions">
+              <li data-i18n="forecastComparisonContribution"><strong>Model comparison.</strong> Compared LSTM, LightGBM, and Informer to evaluate different approaches to the forecasting task and guide model selection.</li>
+              <li data-i18n="forecastModelContribution"><strong>Informer selection.</strong> Selected Informer to capture long-range temporal dependencies while reducing attention complexity through sparse attention.</li>
+              <li data-i18n="forecastDeliveryContribution"><strong>Training through deployment.</strong> Led model training and hyperparameter tuning, evaluated prediction error on the internal dataset, and carried the selected model through deployment.</li>
+            </ul>
+            <div class="project-evidence"><p data-i18n="forecastEvidence"><strong>RMSE ≈ 3</strong> on the project’s internal dataset.</p></div>
             <div class="project-result"><span class="result-arrow" aria-hidden="true">↳</span><span data-i18n="forecastResult">Company AI Hackathon: <strong>2nd prize</strong>.</span></div>
             <p class="tech-line">Python <span>·</span> PyTorch <span>·</span> Informer</p>
           </div>
