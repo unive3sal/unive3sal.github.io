@@ -34,7 +34,7 @@ Open http://127.0.0.1:4173/.
 - `index.html`: Chinese content, semantic markup, navigation, and metadata.
 - `script.js`: English translations, preferences, command palette, and keyboard navigation.
 - `styles.css`: responsive terminal design, dialogs, status line, and print styling.
-- `resume.pdf`: downloadable PDF résumé supplied by the owner, served unchanged as `Yuhao-Deng-Resume.pdf`.
+- `resume.pdf`: downloadable PDF résumé supplied by the owner, served as `Yuhao-Deng-Resume.pdf`.
 - `assets/`: favicon, social image, and self-hosted fonts.
 - `assets/fonts/OFL.txt`: JetBrains Mono font license.
 
