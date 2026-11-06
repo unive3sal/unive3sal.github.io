@@ -123,3 +123,8 @@ html[lang=en] .name-banner--zh,html[lang="zh-CN"] .name-banner--en{display:none}
   .name-word{width:calc(var(--word-units)*3.4%)}
 }
 @media print{.intro h1{font-size:var(--font-name)}.content-section{padding-top:48px}}
+
+/* Pixel glyphs share the name banner's grid and inherit the terminal palette. */
+.section-title h2{display:inline-flex;align-items:center;gap:12px}
+.section-icon{display:block;width:1em;height:1em;flex:none;fill:currentColor;shape-rendering:crispEdges}
+@media(max-width:700px){.section-title h2{gap:10px}}
