@@ -115,7 +115,7 @@ const translations = {
     "mlEngineeringKind": "ML engineering",
     "resultsLabel": "Available commands",
     "resumeLink": "[ Résumé PDF ↓ ]",
-    "roleLine": "Architect <span>/</span> AI Engineering <span>/</span> Rustacean",
+    "roleLine": "Architect <span>/</span> AI Engineer <span>/</span> Rustacean",
     "searchLabel": "Search commands",
     "searchPlaceholder": "Type a command or jump to a section…",
     "selectHint": "select",
@@ -258,7 +258,7 @@ const translations = {
     "mlEngineeringKind": "机器学习工程",
     "resultsLabel": "可用命令",
     "resumeLink": "[ 简历 PDF ↓ ]",
-    "roleLine": "架构师 <span>/</span> AI 工程 <span>/</span> Rust 开发者",
+    "roleLine": "架构师 <span>/</span> AI 工程师 <span>/</span> Rust 开发者",
     "searchLabel": "搜索命令",
     "searchPlaceholder": "输入命令或跳转到章节…",
     "selectHint": "选择",
@@ -323,7 +323,7 @@ function setLanguage(next){
   document.getElementById('status-language').textContent=language==='en'?'en-US':'zh-CN';
   document.title=language==='en'?'Yuhao Deng · ~/home':'邓宇昊 · 个人主页';
   document.querySelector('meta[name="description"]').content=language==='en'?'Yuhao Deng / unive3sal — Architect focused on AI agents, memory systems, and AI application architecture.':'邓宇昊 / unive3sal — 架构师，专注 AI Agent、记忆系统与 AI 应用架构。';
-  document.querySelector('meta[property="og:title"]').content=language==='en'?'Yuhao Deng — Architect / AI Engineering':'邓宇昊 — 架构师 / AI 工程';
+  document.querySelector('meta[property="og:title"]').content=language==='en'?'Yuhao Deng — Architect / AI Engineer':'邓宇昊 — 架构师 / AI 工程师';
   document.querySelector('meta[property="og:description"]').content=language==='en'?'Building AI agent systems with memory, durable execution, and recovery.':'构建具备记忆、持久化执行与中断恢复能力的 AI Agent 系统。';
   updatePaletteLabel();
   updateMode();
